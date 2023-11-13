@@ -1,3 +1,23 @@
+# Example using goroutines for Concurrent API Calls
+
+This Go program demonstrates the power of goroutines by making 36 concurrent third-party API calls. The primary objective is to showcase the efficiency gains achieved through parallelism compared to a sequential execution. Each API call fetches age-related data based on predefined names and countries.
+
+## Overview
+
+The program utilizes goroutines to concurrently fetch data from a third-party API (https://api.agify.io) for different combinations of names and countries. By making 36 parallel API calls, it provides a tangible comparison with the sequential execution, highlighting the potential speedup when leveraging concurrent programming.
+
+## Execution
+
+1. **Names and Countries:** The program is designed to fetch age-related data for a set of names (e.g., John, Jane, Chuck) across various countries (e.g., CA, US, GB, AU).
+
+2. **Parallel Execution:** Goroutines are employed to initiate concurrent API calls for each combination of names and countries, significantly reducing the overall execution time.
+
+3. **Sequential Comparison:** The program also measures the time it would take for the same API calls if executed sequentially, allowing for a clear comparison (just the sum of the individual times).
+
+4. **Results Display:** The results, including names, countries, ages, and execution times, are presented in a formatted table to visualize the performance improvement achieved through goroutines.
+
+Feel free to customize this description according to your specific needs. If you have any further requests or questions, let me know!
+
 ```markdown
 +--------------------+---------+-----+------------+
 | NAME               | COUNTRY | AGE | TIME TAKEN |
